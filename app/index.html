@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<title>Bench prototype</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/pickmeup.css" rel="stylesheet" type="text/css">
+	<!-- Reset Styles -->
+<body>
+
+	<div class="wrapper">	
+		<div class="burger">
+			<img src="../img/Burger menu.svg" alt="">
+		</div>
+			<div  class="hidden-menu scrollbar" style = "display:none;" id="style-4">
+				<div class = "force-overflow">
+				<img src="../img/MaskGroup7.png" alt="">
+				<div class="user">Admin</div>
+				<aside class="sidebar">
+						<div id="leftside-navigation" class="nano">
+						<ul class="nano-content">
+							<li>
+							<a href="index.html"><i class="fa fa-dashboard"></i><span>Agencies</span></a>
+							</li>
+							<li class="sub-menu">
+								<a href="javascript:void(0);"><span>Advetisers</span></a>  
+							</li>
+							<li class="sub-menu">
+								<a href="javascript:void(0);"><span>Campaigns</span></a>  
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><span>Analytics</span></a>  
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><i class="fa fa-table"></i><span>Analytics</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Discovery</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							</li>
+							<li class="sub-menu active">
+							<a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Partners</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>Tools</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><span>Administration</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							<ul>
+								<li><a href="">Google Map</a>
+								</li>
+								<li><a href="">Vector Map</a>
+								</li>
+							</ul>
+							</li>
+							<li class="sub-menu">
+							<a href="javascript:void(0);"><span>Dashboards</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+							<ul>
+								<li>
+									<a href="pages-blank.html">Blank Page</a>
+								</li>
+								<li>
+									<a href="pages-login.html">Login</a>
+								</li>
+								<li>
+									<a href="pages-sign-up.html">Sign Up</a>
+								</li>
+								<li>
+									<a href="pages-calendar.html">Calendar</a>
+								</li>
+								<li>
+									<a href="pages-timeline.html">Timeline</a>
+								</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>		
+		</div>
+		<div class="container">
+			<div class="header">
+				<div class="top">
+					<h1>Analytics</h1>
+					<div class="aud"><span>$</span> AUD</div>
+				</div>
+				<div class="filters">
+					<select name="agencyYield" id="agency">
+						<option value="" selected>Use Agency Yield</option>
+						<option value="">Use Agency Yield2</option>
+					</select>
+					<select name="australiaHearing" id="hearing">
+						<option value="" selected>Australia Hearing</option>
+						<option value="">Australia Hearing2</option>
+					</select>
+					<select name="allCampaigns" id="campaigns">
+						<option value="" selected>All campaigns</option>
+						<option value="">All campaigns</option>
+					</select>
+					<select name="allLayers" id="layers">
+						<option value="" selected>All Layers</option>
+						<option value="">All Layers</option>
+					</select>
+					<div class="calendar">
+						<input type="text" class="date"  placeholder = "11/Nov/"/>
+					</div>
+				</div>
+				<div class="filterBottom">
+					<div class="filtersCheck">
+						<div>
+							<input type="checkbox" class="checkbox" id="checkbox" />
+							<label for="checkbox">Use Agency Yield</label>
+						</div>
+						<div>
+							<input type="checkbox" class="checkbox" id="checkbox1" />
+							<label for="checkbox1">Conversion Breakdown</label>
+						</div>
+					</div>
+					<a href="" class = "exportBtn">Export Excel</a>
+				</div>
+			</div>			
+		</div>	
+		<div class="statistics">
+			<div class="container">
+				<div class="impressions">
+					IMPRESSIONS
+					<span>1,475,298</span>
+				</div>
+				<div class="clicks">
+					CLICKS
+					<span>13,935</span>
+				</div>
+				<div class="achievement">
+					GOAL ACHIEVEMENT
+					<span>448%</span>
+				</div>
+				<div class="budget">
+					SPENT BUDGET
+					<span>$ 4,447</span>
+				</div>
+			</div>
+		</div>
+		<div class="charts">
+			<div class="container">		
+				<div class = "chartBar">
+					<div class = "chartTop">
+						<div class="title">CHANNEL PERFOMANCE</div>
+						<a href="" class = "chartBtn" >Conversions</a>
+					</div>
+					<canvas id="chart1"></canvas>
+				</div>
+				<div class = "chartDoughnut">
+					<div class = "chartTop">
+						<div class="title">CHANNEL SPLIT</div>
+						<a href="" class = "chartBtn" >Conversions</a>
+					</div>
+					<canvas id="chartDoughnut1" class = "doughnut"></canvas>
+				</div>
+				<div class = "chartDoughnut">
+					<div class = "chartTop">
+						<div class="title">CHANNEL SPLIT</div>
+						<a href="" class = "chartBtn" >Conversions</a>
+					</div>
+					<canvas id="chartDoughnut2" class = "doughnut" ></canvas>
+				</div>
+				<div class = "chartBar">
+					<div class = "chartTop">
+						<div class="title">CHANNEL PERFOMANCE</div>
+						<a href="" class = "chartBtn" >Conversions</a>
+					</div>
+					<canvas id="chart2"></canvas>
+				</div>
+				<div class = "chartBar chartMixed">
+					<div class = "chartTop">
+						<div class="title">CHANNEL PERFOMANCE</div>
+						<a href="" class = "chartBtn" >Conversions</a>
+					</div>
+					<canvas id="chartMixed"></canvas>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="js/pickmeup.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
+
+
+

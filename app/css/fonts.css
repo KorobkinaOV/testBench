@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'LFRegular';  
+    src: url('../fonts/LibreFranklin-Regular.ttf');       
+}
+
+@font-face{
+    font-family: 'LFLight';   
+    src: url('../fonts/LibreFranklin-Light.ttf');   
+}
+
+@font-face{
+    font-family: 'LFExLight';   
+    src: url('../fonts/LibreFranklin-ExtraLight.ttf');   
+}
